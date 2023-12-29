@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+
+    <style>
+      span {
+        color: rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Array</h1>
+    <h2>
+      when we want to store multiple data in the a variable we use
+      <span>Array</span>
+    </h2>
+    Array store different datatypes like
+    <b>num or integers, strings, boolean, float, symbol, beign, objects</b>
+
+    <script>
+      let arr = ["array", 2, 4, false, null, undefined, 4.5];
+
+      // for(let i = 0; i<arr.length; i++){
+      // console.log(` ${i}value is ${arr[i]}`)
+
+      // }
+
+      for (let i = 0; i < arr.length; i++) {        // length keyword represent the position of the array  & and array always start from the 0 
+        console.log(`${i} value is ${arr[i]}`);  
+      }
+    </script>
+  </body>
+</html>
