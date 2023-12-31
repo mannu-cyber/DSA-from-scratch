@@ -20,17 +20,32 @@
     Array store different datatypes like
     <b>num or integers, strings, boolean, float, symbol, beign, objects</b>
 
+<input   id="btnElm" type="text">
+<button type="button" onclick="getelem()">Get Elem</button>
+
     <script>
-      let arr = ["array", 2, 4, false, null, undefined, 4.5];
 
-      // for(let i = 0; i<arr.length; i++){
-      // console.log(` ${i}value is ${arr[i]}`)
 
-      // }
+let Array = [ 2 , 49, 59, 10, 1, 0]
 
-      for (let i = 0; i < arr.length; i++) {        // length keyword represent the position of the array  & and array always start from the 0 
-        console.log(`${i} value is ${arr[i]}`);  
-      }
+
+
+function getelem(){
+  let vl = document.getElementById("btnElm").value
+  
+  if(vl<Array.length && typeof parseInt(vl) ==="number" && vl!=(Array) ){
+
+    
+    alert(Array[vl])
+  }
+  else{
+    alert("please enter a valid input")
+}
+
+
+
+}
+
     </script>
   </body>
 </html>
