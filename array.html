@@ -20,31 +20,55 @@
     Array store different datatypes like
     <b>num or integers, strings, boolean, float, symbol, beign, objects</b>
 
-<input   id="btnElm" type="text">
+<input   id="val" type="text">
 <button type="button" onclick="getelem()">Get Elem</button>
 
     <script>
 
-
-let Array = [ 2 , 49, 59, 10, 1, 0]
-
-
+let arry = [ 20, "mannu", 30, 40, 10, 90]
 
 function getelem(){
-  let vl = document.getElementById("btnElm").value
+
+
+let val = document.getElementById('val').value
+
+if (val< arry.length && typeof parseInt(val) && val!=0 ){
+  alert(arry[val])
+}
+
+else{
+alert('please enter the valid input')
+}
+
+
+
+
+// let Array = [ 2 , 49, 59, 10, 1, 0]
+
+
+
+// function getelem(){
+//   let vl = document.getElementById("btnElm").value
   
-  if(vl<Array.length && typeof parseInt(vl) ==="number" && vl!=(Array) ){
+//   if(vl<Array.length && typeof parseInt(vl) ==="number" && vl!=(Array) ){
 
     
-    alert(Array[vl])
-  }
-  else{
-    alert("please enter a valid input")
+//     alert(Array[vl])
+//   }
+//   else{
+//     alert("please enter a valid input")
+// }
+
+
+
+// }
+
+
 }
 
 
 
-}
+
 
     </script>
   </body>
