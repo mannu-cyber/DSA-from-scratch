@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inserting Element</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <input type="text" id="elem" />
+    <input type="text" id="position" />
+
+    <button type="button" onclick="insertElem()">Insert</button>
+
+    <script>
+      function insertElem() {
+        let number = [2, 4, 5, 6, 7];
+        let newElem = document.getElementById("elem").value;
+newElem = parseInt(newElem)
+        let position = document.getElementById("position").value;
+
+        for (let i = number.length - 1; i >= 0; i--) {
+      if(i>= position ){
+        // number[i + 1] = number[i];
+        if  (i == position){
+          number[i]= newElem;
+        }
+      }
+        }
+
+        console.warn(number)
+      }
+    </script> -->
+
+
+
+    <input type="text" id="elem" />
+<input type="text" id="position" />
+<button type="button" onclick="insertElem()">Insert</button>
+
+<script>
+  function insertElem() {
+    let number = [2, 4, 5, 6, 7];
+    let newElem = document.getElementById("elem").value;
+    newElem = parseInt(newElem);
+    let position = document.getElementById("position").value;
+
+    position = parseInt(position);
+
+    if (position < 0 || position > number.length) {
+      console.error("Invalid position");
+      return;
+    }
+
+    for (let i = number.length - 1; i >= 0; i--) {
+      if (i >= position) {
+        if (i === position) {
+          number[i] = newElem;
+        } else {
+          number[i] = number[i - 1];
+        }
+      }
+    }
+
+    console.warn(number);
+  }
+</script>
+
+  </body>
+</html>
