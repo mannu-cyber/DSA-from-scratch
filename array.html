@@ -1,50 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Array</title>
 
-    <style>
-      span {
-        color: rebeccapurple;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Array</title>
+
+  <style>
+    span {
+      color: rebeccapurple;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Array</h1>
+  <h2>
+    when we want to store multiple data in the a variable we use
+    <span>Array</span>
+  </h2>
+  Array store different datatypes like
+  <b>num or integers, strings, boolean, float, symbol, beign, objects</b>
+
+  <input id="val" type="text" />
+  <button type="button" onclick="getelem()">Get Elem</button>
+
+  <script>
+    // let arry = [ 20, "Jai Shree Ram", 30, 40, 10, 90]
+    // arry.length = 4;                   //  we can  increase the length of an arrya using 'length' key word
+
+    // arry.forEach(myfn);
+
+    // function myfn(elem){
+    //   console.log(myfn)
+    // }
+
+    // let array = new Array("hellow", " hellow world", " like", "follow", 4);
+    // // console.log(Array.isArray(array));
+
+    // let num = [2, 3, 5, 6, 6];
+    // console.log(num instanceof Array); // "instanceof Array" method  is used to check the object or array..
+
+    // arry.push("added abhi element by using push() method abhi"); // if we want to add new element in the array we can use push() method . Basically it add the new element at the end of array.
+    // arry.unshift(" added raju element by using unshift() method "); // if we want to add new element in starting of an array we can use unshift() method .
+    // arry[arry.length] = "ramehs"; // its also work like the push method but the process is different.
+
+    // // console.log( Array.isArray());   // Array.isArray() method usually differenciate that array is object or array,, if the variable is array it return true otherwise false.
+    // console.log(arry instanceof Array);
+
+
+
+
+
+
+
+
+
+
+
+
+    // function getelem() {
+    //   let val = document.getElementById("val").value;
+
+    //   if (val < arry.length && typeof parseInt(val) && val != 0) {
+    //     alert(arry[val]);
+    //   } else {
+    //     alert("please enter the valid input");
+    //   }
+
+    // let Array = [ 2 , 49, 59, 10, 1, 0]
+
+    // function getelem(){
+    //   let vl = document.getElementById("btnElm").value
+
+    //   if(vl<Array.length && typeof parseInt(vl) ==="number" && vl!=(Array) ){
+
+    //     alert(Array[vl])
+    //   }
+    //   else{
+    //     alert("please enter a valid input")
+    // }
+
+    // }
+    // }
+
+
+// here we user can enter the value in
+
+      function revString() {
+        let input = prompt('enter the value');
+       newstring = input.split('').reverse().join('')
+     alert(newstring)
       }
-    </style>
-  </head>
-  <body>
-    <h1>Array</h1>
-    <h2>
-      when we want to store multiple data in the a variable we use
-      <span>Array</span>
-    </h2>
-    Array store different datatypes like
-    <b>num or integers, strings, boolean, float, symbol, beign, objects</b>
+      revString()
 
-    <input id="val" type="text" />
-    <button type="button" onclick="getelem()">Get Elem</button>
 
-    <script>
-      // let arry = [ 20, "Jai Shree Ram", 30, 40, 10, 90]
-      // arry.length = 4;                   //  we can  increase the length of an arrya using 'length' key word
+// second method using parameter
 
-      // arry.forEach(myfn);
+      function Rvstrng(value1){
 
-      // function myfn(elem){
-      //   console.log(myfn)
-      // }
+        let input =value1.split('').reverse().join('')
+    console.log(input);
+      return  input
+    }
 
-      let array = new Array("hellow", " hellow world", " like", "follow", 4);
-      // console.log(Array.isArray(array));
-
-      let num = [2, 3, 5, 6, 6];
-      console.log(num instanceof Array); // "instanceof Array" method  is used to check the object or array..
-
-      arry.push("added abhi element by using push() method abhi"); // if we want to add new element in the array we can use push() method . Basically it add the new element at the end of array.
-      arry.unshift(" added raju element by using unshift() method "); // if we want to add new element in starting of an array we can use unshift() method .
-      arry[arry.length] = "ramehs"; // its also work like the push method but the process is different.
-
-      // console.log( Array.isArray());   // Array.isArray() method usually differenciate that array is object or array,, if the variable is array it return true otherwise false.
-      console.log(arry instanceof Array);
+    let whole = 'String-reverse'
+    Rvstrng(whole)
 
 
 
@@ -52,35 +113,20 @@
 
 
 
+    function reverStr(value) {
+
+      let input = value.split('').reverse().join('')
+      console.log(input);
+      return input
+
+    }
+
+    let userValue = 'raju_rani'
+
+    reverStr(userValue)
 
 
+  </script>
+</body>
 
-      
-
-      function getelem() {
-        let val = document.getElementById("val").value;
-
-        if (val < arry.length && typeof parseInt(val) && val != 0) {
-          alert(arry[val]);
-        } else {
-          alert("please enter the valid input");
-        }
-
-        // let Array = [ 2 , 49, 59, 10, 1, 0]
-
-        // function getelem(){
-        //   let vl = document.getElementById("btnElm").value
-
-        //   if(vl<Array.length && typeof parseInt(vl) ==="number" && vl!=(Array) ){
-
-        //     alert(Array[vl])
-        //   }
-        //   else{
-        //     alert("please enter a valid input")
-        // }
-
-        // }
-      }
-    </script>
-  </body>
 </html>
