@@ -3,7 +3,7 @@
 // The syntax is very shorter as compare to tradional function.
 // it makes the code more cleaner and readable.
 // When arrow function has sigle expression we can directly return the value instead of " return or curlybraces11"
-
+// Arrow function does not allow "this " keaword
 
 
 // syntax => 'name of the function' = () =>{}
