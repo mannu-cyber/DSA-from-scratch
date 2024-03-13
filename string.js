@@ -29,8 +29,24 @@
 //        elem
 // })
 
-let texts = "    this is the strings formate   it";
-const trimedWhiteSpace = texts.trim(" ");
+// let texts = "    this is the strings formate   it           ";
+
+// const toArrayyy = texts.split(" ");
+
+// const toRemoveWhiteSpace = toArrayyy.map((curva, index) => {
+//   return curva.trim(" ");
+// });
+
+// console.log(toRemoveWhiteSpace);
+
+// texts.forEach(element => {
+//        console.log(element);
+// })
+// console.log(toarray);
+
+// const toarray = texts.map((curval)=>curval.trim())
+// console.log(toarray);
+// const trimedWhiteSpace = texts.trim()
 
 // const toArray = trimedWhiteSpace.split(" ").map((curval, index) => {
 //   return `${curval} index ${index}`;
@@ -38,7 +54,8 @@ const trimedWhiteSpace = texts.trim(" ");
 
 // console.log(toArray);
 
-console.log(trimedWhiteSpace.slice(1)); // slice() method is use to get the substring from the  string and it accept starting and ending index as an argument and the starting index is included and ending index is excluded
+// console.log(trimedWhiteSpace.slice(1));
+// slice() method is use to get the substring from the  string and it accept starting and ending index as an argument and the starting index is included and ending index is excluded
 
 // const toArray = texts.split(' ')  /// this method is use to convert the strings into array  .split()
 
@@ -62,3 +79,42 @@ console.log(trimedWhiteSpace.slice(1)); // slice() method is use to get the subs
 
 //  texts.startsWith('this')
 // console.log(result);
+
+// console.log("a".charCodeAt(0));
+// console.log("z".charCodeAt(0));
+
+// for (let char = 97; char <= 122; char++) {
+//   console.log(String.fromCharCode(char));
+// }
+
+// for(let char = 97; char<= 122; char++){
+// console.log(String.fromCharCode(char));
+// }
+
+// for(let char = 122 ; char>= 97; char--){
+// console.log(String.fromCharCode(char))
+
+// }
+
+// console.log('Z'.charCodeAt(0))
+// console.log('A'.charCodeAt(0))
+
+// for(let upper = 65; upper<= 90; upper++){
+//   console.log(String.fromCharCode(upper));
+// }
+
+// for(let upper = 1; upper<=90; upper++){
+//   console.log(String.fromCharCode(upper));
+// }
+
+// console.log("enter".charCodeAt(0));
+
+// document
+//   .querySelector("#button")
+//   .addEventListener("click", () => console.log("hellow"));
+
+// document.querySelector("#button").addEventListener("keydown", (event) => {
+//   if (event.key === "En") {
+//     console.log("hellow");
+//   }
+// });
