@@ -118,3 +118,133 @@
 //     console.log("hellow");
 //   }
 // });
+
+// console.log("A".charCodeAt(0));
+// for (let char = 65; char <= 165; char++) {
+//   console.log(String.fromCharCode(char));
+// }
+
+// const vowel = " this is the check for the vowels";
+// const checkVowels = vowel.matchAll('e')
+
+// console.log(checkVowels);
+
+// const checkVowelsPresentOrNot = (char) => {
+//   const vowels = "aeiou";
+
+//   for (const check of vowels) {
+//     console.log(char.includes(check));
+//   }
+// };
+
+// console.log(checkVowelsPresentOrNot('this is my name check'));
+
+// const vowel = ' aeiou'
+
+// for (const char of vowel) {
+//   // console.log(char.includes(vowel));
+//   console.log(char);
+// }
+
+// const checkVowelsPresentOrNot = (str)=>{
+
+// const vowel = 'aeiou'
+
+// for (const iterator of vowel) {
+//   console.log(str.includes(iterator));
+// }
+
+// }
+
+// const checkKarathai = (str)=>{
+// const vowels = 'aeiou'
+
+// for (const iterator of vowels) {
+//   // console.log(str.includes(iterator));
+
+//   if(!str.includes(iterator)){
+//     return false
+//   }
+
+// }
+// return true
+// }
+
+// // console.log(checkKarathai('hehehe'))
+
+// console.log(checkKarathai('bhai sahi sahi bata hai ki nhi ek bhi vowels isme nhi to mai dusra method search karu'));
+
+// const checkVowel = (val)=>{
+
+// const vowe = 'aeiou'
+// for (const iterator of vowe) {
+//   // console.log(val.includes(iterator));
+
+//   if(! val.includes(iterator)){
+//     return 'not Present';
+
+//   }
+// }
+// return ' present'
+
+// }
+
+// console.log(checkVowel('my name is Abhimanyu Sahani'
+
+// const check = (str)=>{
+
+// const vowel = 'aeiou'
+// for (const iterator of vowel) {
+//   console.log(str.includes(iterator));
+// }
+
+// }
+
+// console.log(check('hey people how are you'));
+
+// const check = (str)=>{
+// const vowels = 'aeiou'
+
+// for (const iterator of vowels) {
+//   console.log(str.includes(iterator));
+// }
+
+// }
+
+// console.log(check('hey people how are you this is me'));
+
+// console.log('z'.charCodeAt(0));
+// console.log('a'.charCodeAt(0));
+
+// for(let char = 97; char<=122; char++){
+
+//   console.log(String.fromCharCode(char));
+// }
+
+// const checkPangaram = (str) => {
+//   const alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+//   for (const iterator of alphabet) {
+//     console.log(str.includes(iterator));
+//   }
+// };
+
+// console.log(checkPangaram("the quick brown fox jumps over the lazy dog"));
+
+const checkPangaram = (str) => {
+
+let storeAlphabet = (words)=>{
+  for (let char = 97; char <= 122; char++) {
+    console.log(String.fromCharCode(char));
+  }
+}
+for (const alphabet of storeAlphabet) {
+  
+console.log(str.includes(alphabet));
+
+}
+
+
+};
+
+checkPangaram();
