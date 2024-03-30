@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="main bg-zinc-900 text-white w-full h-screen flex flex-col justify-center items-center"
+    >
+      <!-- <h1 class="text-center text-4xl uppercase">watch</h1> -->
+
+      <div
+        class="container rounded-[20px] w-[39rem] h-[10rem] bg-gray-500 flex flex-col justify-center items-center text-6xl"
+      >
+        <p id="clock"></p>
+
+        <p id="date"></p>
+      </div>
+      <div class="stand w-[13rem] h-2 rounded bg-yellow-500"></div>
+      <div class="stand w-[37rem] h-2 rounded-[50%] bg-gray-700"></div>
+    </div>
+    <script>
+      const getTime = () => {
+        let curtime = new Date().toLocaleTimeString();
+
+        document.getElementById("clock").innerText = curtime;
+      };
+
+      const getDate = () => {
+        let curDate = new Date().toLocaleDateString();
+        document.getElementById("date").innerText = curDate;
+      };
+
+      setInterval(() => {
+        getTime();
+        getDate();
+      }, 1000);
+    </script>
+  </body>
+</html>
