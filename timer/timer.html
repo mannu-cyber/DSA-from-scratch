@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="main bg-[#131A31] w-screen h-screen text-white flex flex-col justify-center items-center"
+    >
+      <h1 class="text-center capitalize text-3xl mb-9">timer</h1>
+      <div class="timer w-[40rem] h-[30rem] bg-zinc-900 rounded-[20px] p-10">
+        <p
+          id="countDown"
+          class="timer text-center text-[7rem] capitalize mb-10 text-red-800"
+        >
+          0
+        </p>
+        <div class="buttons-container flex flex-wrap	justify-center items-center gap-5">
+          <button
+            id="startBtn"
+            class="py-2 px-9 bg-red-900 ease-in-out rounded-[60px] hover:bg-zinc-500 hover:border"
+          >
+            Start
+          </button>
+          <button
+            id="stopBtn"
+            class="py-2 px-9 bg-red-900 ease-in-out rounded-[60px] hover:bg-zinc-500 hover:border"
+          >
+            Stop
+          </button>
+          <button
+            id="getbtn"
+            class="py-2 px-9 bg-red-900 ease-in-out rounded-[60px] hover:bg-zinc-500 hover:border"
+          >
+            Get Time
+          </button>
+          <button
+            id="resetBtn"
+            class="py-2 px-9 bg-red-900 ease-in-out rounded-[60px] hover:bg-zinc-500 hover:border"
+          >
+            Reset
+          </button>
+          <button
+            id="clearBtn"
+            class="py-2 px-9 bg-red-900 ease-in-out rounded-[60px] hover:bg-zinc-500 hover:border"
+          >
+            Clear Time
+          </button>
+        </div>
+        <p id="displayEvent" class="text-center my-9">Time is 0</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
