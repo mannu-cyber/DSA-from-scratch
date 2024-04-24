@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+       width: 100vw;
+       height: 100vh;
+       background-color: rgb(17, 12, 12);
+       display: grid;
+       place-items: center;
+}
+.container{
+       width: 520px;
+       height: 450px;
+       background-color: white;
+       border-radius: 10px;
+       padding: 10px 14px;
+}
+
+.search{
+       /* width: 90px; */
+       border-radius: 10px;
+       display: flex;
+       border: 1px solid rgb(0, 0, 0);
+}
+.search i{
+       color: black;
+}
+.search input{
+       border: none;
+}
+.search input:{
+       border: none;
+}

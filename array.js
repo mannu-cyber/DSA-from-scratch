@@ -121,15 +121,21 @@
 
 // console.log(mulEvenNum);
 
-const number = [1, 3, 45, 56, 67, 87, 8, 7, 6, 54];
+// const number = [1, 3, 45, 56, 67, 87, 8, 7, 6, 54];
 
 // const number = [];
 
 // ************** when we use reduce method on an array it reduce the all the data in a single data and if we don't provide the initial value in it during the empty array the programme will throw error ************************//
 
-
 // const totalNum = number.reduce((accumilater, curval) => {
 //   return accumilater + curval;
 // },0);
 
-console.log(totalNum);
+// console.log(totalNum);
+
+const arr = [3, 45, 3, 22, 33, 44, 3];
+let sortedVal = arr.sort((a,b)=>a-b).filter((num) => {
+
+ return  num > 10;
+});
+console.log(sortedVal);

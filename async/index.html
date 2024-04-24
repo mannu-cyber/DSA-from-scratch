@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dad Jokes</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      #api-body{
+       width: 80%;
+       color: white;
+       text-align: center;
+       font-size: 1.4rem;
+      }
+      .main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        background-color: rgb(33, 33, 33);
+        color: rgb(15, 205, 15);
+      }
+      button {
+        padding: 5px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Dad's Jokes</h1>
+
+      <p id="api-body"></p>
+
+      <button type="button" id="btn">Get A New Joks</button>
+    </div>
+
+    <script>
+      const apiLInk = "https://icanhazdadjoke.com";
+
+      const apibody = document.getElementById("api-body");
+
+      const refreshed = async () => {
+        try {
+          const res = await fetch(apiLInk, {
+            headers: {
+              Accept: "Application/JSON",
+            },
+          });
+
+          const data = await res.json()
+          apibody.innerHTML = data.joke
+        } catch(error) {
+              apibody.innerHTML = error
+        }
+      };
+
+      refreshed()
+
+      document.getElementById("btn").addEventListener("click", refreshed);
+    </script>
+  </body>
+</html>

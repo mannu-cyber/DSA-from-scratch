@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+#likh{
+       text-align: center;
+       padding: 2vw 0;
+}
+      .container {
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+      }
+.container div{
+       width: 50px;
+       height: 50px;
+       border: 1px solid white;
+       display: grid;
+       place-items: center;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+           <p id="likh"></p>
+      <div class="container">
+      </div>
+    </div>
+
+    <script>
+      const dada = document.querySelector(".container");
+
+      const eventChacha = () => {
+        for (let i = 1; i <= 50; i++) {
+          let elem = document.createElement("div");
+          elem.innerText = i;
+          dada.appendChild(elem);
+        }
+      };
+
+      dada.addEventListener("click", (e) => {
+        let likh = document.querySelector("#likh");
+
+        likh.innerHTML = e.target.innerText;
+
+       
+
+
+
+      } 
+);
+
+      eventChacha();
+    </script>
+  </body>
+</html>
