@@ -133,9 +133,82 @@
 
 // console.log(totalNum);
 
-const arr = [3, 45, 3, 22, 33, 44, 3];
-let sortedVal = arr.sort((a,b)=>a-b).filter((num) => {
+// const arr = [3, 45, 3, 22, 33, 44, 3];
+// let sortedVal = arr.sort((a,b)=>a-b).filter((num) => {
 
- return  num > 10;
-});
-console.log(sortedVal);
+//  return  num > 10;
+// });
+// console.log(sortedVal);
+
+
+// let ans = 0
+// for (let i = 0; i < arr.length; i++) {
+//   ans = ans + arr[i]
+
+// }
+
+// console.log(ans);
+
+
+// let arr = [10, 20, 311, 40]
+
+// let max = arr[0]
+
+
+// for (let i = 1; i < arr.length; i++) {
+//   if (max < arr[i]) {
+//     max = arr[i]
+//   }
+// }
+
+// console.log(max);
+
+
+
+// let arr = [10, 20, 311, 40]
+
+// let copy = arr[0]
+
+// for (let i = 0; i < arr.length - 1; i++) {
+
+//   arr[i] = arr[i + 1]
+// }
+
+// arr[arr.length - 1] = copy
+
+// console.log(arr);
+
+
+
+// let copy = array[0]
+
+// for (let i = 0; i < array.length - 1; i++) {
+
+//   array[i] = array[i + 1]
+// }
+// array[array.length - 1] = copy // array ki length ka jo last index hai wo 
+
+// console.log(array);
+
+
+// console.log(array[array.length - 1])
+
+
+// let array = [1, 3, 4, 23, 132]
+
+// let copy = array[array.length - 1]
+
+
+
+// for (let i = array.length - 1; i > 0; i--) {
+//   array[i] = array[i - 1]
+// }
+
+// array[0] = copy
+
+
+// console.log(array);
+
+
+
+
